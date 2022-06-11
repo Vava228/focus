@@ -1,0 +1,10 @@
+{{template "base" .}}
+
+{{define "title"}}Тарифы{{end}}
+
+{{define "main"}}
+  <h1>Фокус | Тарифы</h1>
+  {{range Prices . }}
+    <li><b>{{ . }}</b></li>
+  {{end}}
+{{end}}
