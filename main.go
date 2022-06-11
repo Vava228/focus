@@ -18,6 +18,7 @@ type Tool struct {
   Id int64
   Name string
   Status string
+  Price float32
 }
 
 func Greetings(word string) (text string) {
