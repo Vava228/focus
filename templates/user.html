@@ -1,11 +1,9 @@
-{{template "base" .}}
+{{ template "base" . }}
 
-{{define "title"}}Главная{{end}}
+{{ define "title" }}Пользователь{{ end }}
 
-{{define "main"}}
-  <h1>Фокус | Главная</h1>
-  <p class="lead"></p>
-  <p class="lead">
-  <a href="/" class="btn btn-lg btn-secondary fw-bold border-white bg-black">Войти | Зарегистрироваться</a>
-  </p>
-{{end}}
+{{ define "main" }}
+  <h1>Фокус | Пользователь {{ .Name }}(№{{ .Id }})</h1>
+  <p class="lead">Баланс: {{ .Balance }}</p>
+  <p class="lead">Статус пользователя: {{  }}</p>
+{{ end }}
